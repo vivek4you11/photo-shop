@@ -1,0 +1,37 @@
+.masonry {
+  margin: 2.5em auto;
+  column-gap: 1.5em;
+}
+
+/* The Masonry Brick */
+.item {
+  background: #fff;
+  padding: 1em;
+  margin: 0 1em 1.5em;
+  border: 1px solid black;
+}
+.item:hover {
+  border: 2px solid blue;
+}
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1200px) {
+  .masonry {
+    column-count: 4;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1200px) and (min-width: 900px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  .masonry {
+    text-align: -webkit-center;
+    column-count: 2;
+  }
+}
